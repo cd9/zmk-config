@@ -4,18 +4,22 @@
  * SPDX-License-Identifier:MIT
  */
 
+#define PERMISSIVE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
   flavor = "hold-preferred";
-  tapping_term_ms = <120>;
+  tapping_term_ms = <150>;
+  quick_tap_ms =<200>;
 };
 
 &mt {
   flavor = "hold-preferred";
-  tapping_term_ms = <120>;
+  tapping_term_ms = <150>;
+  quick_tap_ms =<200>;
 };
 
 /{
